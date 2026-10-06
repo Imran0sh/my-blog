@@ -61,7 +61,7 @@ export default function UiHero() {
                 />
               </a>
               <a
-                href="https://github.com/imranahmetov-png/my-blog"
+                href="https://github.com/Imran0sh"
                 target="_blank"
                 rel="noopener noreferrer"
               >

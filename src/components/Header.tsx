@@ -4,6 +4,7 @@ import { useClickOutsite } from '@/hooks/useClickOutsite'
 import ThemeD from '@/assets/img/themeDark.svg'
 import ThemeL from '@/assets/img/themeLight.svg'
 import MenuImg from '@/assets/img/MenuImg.svg'
+import { Link } from 'react-router-dom'
 
 export default function UIHeader() {
   const copyDiscord = () => {
@@ -47,41 +48,36 @@ export default function UIHeader() {
         sm:order-2 sm:flex-1 sm:justify-center `} // Эти классы центрируют меню на ПК
       >
         <div className="flex flex-col gap-3 sm:gap-10 px-2 sm:flex-row ">
-          <a
-            href="#Home"
+          <Link to={"/"}
             onClick={handleLinkClick}
             className="text-[#FD6F00] hover:text-[#ff8a33] font-bold text-lg sm:text-[23px]"
           >
             Home
-          </a>
-          <a
-            href="#Services"
+          </Link>
+          <Link to={"/Services"}
             onClick={handleLinkClick}
             className="text-[#959595] hover:text-gray-300 text-lg sm:text-[23px]"
           >
             Services
-          </a>
-          <a
-            href="#About me"
+          </Link>
+          <Link to={"/About"}
             onClick={handleLinkClick}
             className="text-[#959595] hover:text-gray-300 text-lg sm:text-[23px] whitespace-nowrap"
           >
             About me
-          </a>
-          <a
-            href="#Portfolio"
+          </Link>
+          <Link to={"/Portfolio"}
             onClick={handleLinkClick}
             className="text-[#959595] hover:text-gray-300 text-lg sm:text-[23px]"
           >
             Portfolio
-          </a>
-          <a
-            href="#Contact me"
+          </Link>
+          <Link to={"/Contact"}
             onClick={handleLinkClick}
             className="text-[#959595] hover:text-gray-300 text-lg sm:text-[23px] whitespace-nowrap"
           >
             Contact me
-          </a>
+          </Link>
         </div>
       </nav>
 
